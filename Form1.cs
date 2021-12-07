@@ -26,7 +26,7 @@ namespace POLE
             int[] pole = new int[n];
             Random rn = new Random();
             int cisla;
-
+            
             for (int i = 0; i < n; i++)
             {
                 cisla = rn.Next(1, 50);
@@ -36,7 +36,9 @@ namespace POLE
             {
                 listBox1.Items.Add(k.ToString());
             }
+
             Array.Sort(pole);
+
             if (radioButton2.Checked)
             {
                 Array.Reverse(pole);
